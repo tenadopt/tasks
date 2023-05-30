@@ -1,25 +1,34 @@
 import React from 'react';
 import './App.css';
-import {Header} from "./site/Header";
-import {Footer} from "./site/Footer";
-import {Body} from "./site/Body";
-import {NewComponent} from "./site/NewComponent";
 
 function App() {
 
-    const topCars = [
-        {manufacturer:'BMW', model:'m5cs'},
-        {manufacturer:'Mercedes', model:'e63s'},
-        {manufacturer:'Audi', model:'rs6'}
-    ]
+    // const myFirstSubscriber = () => {
+    //     console.log("Hello I'm Vasya")
+    // }
+    //
+    // const mySecondSubscriber = () => {
+    //     console.log("Hello I'm Ivan")
+    // }
+
+    // const onClickHandler = (name: string) => {
+    //     console.log(`Hello. My name is ${name}!`)
+    // }
+
+    const foo1 = () => {
+        console.log('Uraaaaa')
+    }
+
+    const foo2 = (n: number) => {
+        console.log(n)
+    }
 
     return (
         <div>
-            <Header title="Hey BOB"/>
-            <Body title="Hey man"/>
-            <Footer/>
-            <NewComponent topCars={topCars}/>
-
+            {/*<button onClick={()=>onClickHandler('Ivan')}>MyYoutubeChannel-2</button>*/}
+            {/*<button onClick={()=>onClickHandler('Vasya')}>MyYoutubeChannel-1</button>*/}
+            <button onClick={foo1}>1</button>
+            <button onClick={()=>foo2(100200)}>2</button>
         </div>
     );
 }
