@@ -9,7 +9,7 @@ type FullInputType = {
 export const FullInput = (props: FullInputType) => {
 
     let [title, setTitle] = useState('')
-    console.log(title)
+
 
     const onChangeInputHandler = (event: ChangeEvent<HTMLInputElement>) => {
         setTitle(event.currentTarget.value)
